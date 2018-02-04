@@ -1,0 +1,20 @@
+for win 32
+in the mongodb bin folder
+run in cmd:
+
+mongod --directoryperdb --dbpath C:/Mongodb/data/db --logpath C:/Mongodb/log/mongodb.log --logappend --rest --httpinterface --journal --storageEngine=mmapv1 --install
+
+net start mongoDB
+
+
+mongo
+
+use dbname
+
+db.createCollection("customers")
+
+show collections
+
+db.customers.insert({key:"value"})
+
+db.customers.find() / find.pretty()
